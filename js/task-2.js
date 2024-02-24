@@ -14,10 +14,11 @@ const images = [
 ];
 
 const galleryEl = document.querySelector('.gallery');
-
+galleryEl.style.display = "flex";
+galleryEl.style.gap = "24px";
 const itemImageEl = images.map((image) =>
     `<li class="item">
-      <img class="pictures" url="${image.url}" alt="${image.alt}" width="360" height="300"/>
+      <img class="pictures" src="${image.url}" alt="${image.alt}" width="360" height="300"/>
     </li>`
 )
 .join('');
